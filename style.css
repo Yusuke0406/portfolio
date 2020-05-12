@@ -3,3 +3,38 @@ body{
   color: #1a1919;
   font-size: 14px;
 }
+
+.container{
+  padding: 30px 64px 0px 64px;
+}
+nav{
+  text-align: right;
+  top: 31.5px;
+  right: 0;
+  z-index: 10000;
+}
+.dropdown__icon{
+  display: inline-block;
+
+  zoom: 1;
+  display: inline;
+  vertical-align: auto;
+  cursor: pointer;
+  z-index: 100;
+}
+.bicyle_icon{
+  font-size: 25px;
+}
+.dropdown{
+  list-style: none;
+  margin-top: 5px;
+  display: block;
+}
+.dropdown__list{
+  color: #1a1919;
+  text-decoration: none;
+  padding: 3px 0px 0px 32px;
+  font-size: 17px;
+  line-height: 2.2;
+  font-weight: 500;
+}

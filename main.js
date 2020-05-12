@@ -1,3 +1,6 @@
 $(function(){ 
-  $('h2').css('color','pink');
+  $('.fa-bicycle').click(function(){
+    $('.dropdown').fadeToggle();
+    // $(this).css('display','none');
+  });
 });
