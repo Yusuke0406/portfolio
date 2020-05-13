@@ -19,8 +19,8 @@ $(function() {
             width:$(this).attr('data-percent')
           },4000);
         });
-        }else if(mvh2 < top){
-          $('body').css('background-color', '#efeff0');
+        }else if(mvh2 < top ){
+          $('body').css('background-color', '#87ceeb');
         } else {
           $('body').css('background-color', '#efeff0');
           $('.page2').css('color','black')
