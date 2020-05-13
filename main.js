@@ -8,9 +8,10 @@ $(function() {
 
 
     var mvh = $('.page1').height();
+    var mvh2 = $('.page1').height() + $('.page2').height();
     $(window).scroll(function() {
       var top = $(window).scrollTop();
-      if (mvh <= top) {
+      if (mvh < top && mvh2 > top) {
         $('body').css('background-color', ' #437076');
         $('.page2').css('color','Window')
         $('.skillbar').each(function(){
@@ -18,12 +19,25 @@ $(function() {
             width:$(this).attr('data-percent')
           },4000);
         });
+        }else if(mvh2 < top){
+          $('body').css('background-color', '#efeff0');
         } else {
-        $('body').css('background-color', '#efeff0');
-        $('.page2').css('color','black')
-      }
+          $('body').css('background-color', '#efeff0');
+          $('.page2').css('color','black')
+        }
     });
+
+    $('.intro').fadeToggle(2000);
+
+      $('.single').slick({
+        arrows:true,
+        slidesToScroll: 1,
+        slidesToShow:3,
+        autoplay: false,
+        autoplaySpeed: 2000,
+      });
   });
+
 
   
   

@@ -3,10 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="main.js"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+  
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script src="main.js"></script>
   <title>Portfolio</title>
 </head>
 <body>
@@ -17,7 +21,7 @@
         <ul class="dropdown">
           <li><a href="#" class="dropdown__list">TOP</a></li>
           <li><a href="#about" class="dropdown__list">ABOUT</a></li>
-          <li><a href="#" class="dropdown__list">WORKS</a></li>
+          <li><a href="#work" class="dropdown__list">WORKS</a></li>
           <li><a href="#" class="dropdown__list">CONTACTC</a></li>
         </ul>
       </nav>
@@ -27,15 +31,14 @@
           <p class="title_desc">
             1997/04/06</br>
             I am a senior at KANSAI GAIDAI GAIDAI Univercity</br>
-            My majors are English and Chinese
           </p>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="page2" id="about"> 
-    <h3 class="about">ABOUT</h3>
-    <div class="text_box">
-      <div class="text_box_left">
+    <div class="page2" id="about"> 
+      <h3 class="about">ABOUT</h3>
+      <div class="text_box">
+       <div class="text_box_left">
         
           <div class="left-desc">
             <h2>ハラダ　ユウスケ</h2>
@@ -51,48 +54,60 @@
               I am currently job hunting towards the Engineer.
             </p>
           </div>
+        </div>
+        <div class="text_box_right">
+          <div class="skillbar clearfix " data-percent="80%">
+            <div class="skillbar-title" style="background: #d35400;"><span>HTML5</span></div>
+            <div class="skillbar-bar" style="background: #e67e22;"></div>
+            <div class="skill-bar-percent">80%</div>
+          </div> 
+          
+          <div class="skillbar clearfix " data-percent="70%">
+            <div class="skillbar-title" style="background: #2980b9;"><span>CSS3</span></div>
+            <div class="skillbar-bar" style="background: #3498db;"></div>
+            <div class="skill-bar-percent">70%</div>
+          </div> 
+          
+          <div class="skillbar clearfix " data-percent="50%">
+            <div class="skillbar-title" style="background: #2c3e50;"><span>Javascript</span></div>
+            <div class="skillbar-bar" style="background: #2c3e50;"></div>
+            <div class="skill-bar-percent">50%</div>
+          </div>
+          
+          <div class="skillbar clearfix " data-percent="30%">
+            <div class="skillbar-title" style="background: #46465e;"><span>PHP</span></div>
+            <div class="skillbar-bar" style="background: #5a68a5;"></div>
+            <div class="skill-bar-percent">30%</div>
+          </div>
+          
+          <div class="skillbar clearfix " data-percent="40%">
+            <div class="skillbar-title" style="background: #333333;"><span>React</span></div>
+            <div class="skillbar-bar" style="background: #525252;"></div>
+            <div class="skill-bar-percent">40%</div>
+          </div> 
+          
+          <div class="skillbar clearfix " data-percent="80%">
+            <div class="skillbar-title" style="background: #27ae60;"><span>Ruby</span></div>
+            <div class="skillbar-bar" style="background: #2ecc71;"></div>
+            <div class="skill-bar-percent">80%</div>
+          </div>
+          
+          <div class="skillbar clearfix " data-percent="70%">
+            <div class="skillbar-title" style="background: #124e8c;"><span>English</span></div>
+            <div class="skillbar-bar" style="background: #4288d0;"></div>
+            <div class="skill-bar-percent">70%</div>
+          </div>
+        </div>
       </div>
-      <div class="text_box_right">
-        <div class="skillbar clearfix " data-percent="80%">
-          <div class="skillbar-title" style="background: #d35400;"><span>HTML5</span></div>
-          <div class="skillbar-bar" style="background: #e67e22;"></div>
-          <div class="skill-bar-percent">80%</div>
-        </div> 
-        
-        <div class="skillbar clearfix " data-percent="70%">
-          <div class="skillbar-title" style="background: #2980b9;"><span>CSS3</span></div>
-          <div class="skillbar-bar" style="background: #3498db;"></div>
-          <div class="skill-bar-percent">70%</div>
-        </div> 
-        
-        <div class="skillbar clearfix " data-percent="50%">
-          <div class="skillbar-title" style="background: #2c3e50;"><span>Javascript</span></div>
-          <div class="skillbar-bar" style="background: #2c3e50;"></div>
-          <div class="skill-bar-percent">50%</div>
-        </div>
-        
-        <div class="skillbar clearfix " data-percent="30%">
-          <div class="skillbar-title" style="background: #46465e;"><span>PHP</span></div>
-          <div class="skillbar-bar" style="background: #5a68a5;"></div>
-          <div class="skill-bar-percent">30%</div>
-        </div>
-        
-        <div class="skillbar clearfix " data-percent="40%">
-          <div class="skillbar-title" style="background: #333333;"><span>React</span></div>
-          <div class="skillbar-bar" style="background: #525252;"></div>
-          <div class="skill-bar-percent">40%</div>
-        </div> 
-        
-        <div class="skillbar clearfix " data-percent="80%">
-          <div class="skillbar-title" style="background: #27ae60;"><span>Ruby</span></div>
-          <div class="skillbar-bar" style="background: #2ecc71;"></div>
-          <div class="skill-bar-percent">80%</div>
-        </div>
-        
-        <div class="skillbar clearfix " data-percent="70%">
-          <div class="skillbar-title" style="background: #124e8c;"><span>English</span></div>
-          <div class="skillbar-bar" style="background: #4288d0;"></div>
-          <div class="skill-bar-percent">70%</div>
+    </div>
+    <div class="page3">
+      <h3 class="about" id="work">WORKS</h3>
+      <div class="work">
+        <div class="single">
+          <div><img src= merukari.jpg ></div>
+          <div><img src= task.jpg ></div>
+          <div><img src= merukari.jpg ></div>
+          <div><img src= task.jpg ></div>
         </div>
       </div>
     </div>

@@ -92,6 +92,7 @@ nav{
     padding-top: 25vh;
     text-align: center;
     margin: 0;
+    display: none;
 }
 
 .page1{
@@ -230,4 +231,20 @@ width:110px;
 	line-height:35px;
 	color:#ffffff;
 	color:rgba(0, 0, 0, 0.4);
+}
+
+.page3{
+  height: 100vh;
+  font-family: "Noto Serif JP", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HGS明朝E", "ＭＳ Ｐ明朝", serif;
+  text-align: center;
+}
+
+.work{
+  width: 100%;
+  margin-top: 10%;
+}
+
+img{
+  width: 400px;
+  height: 300px;
 }
