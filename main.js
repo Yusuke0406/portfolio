@@ -30,11 +30,22 @@ $(function() {
     $('.intro').fadeToggle(2000);
 
       $('.single').slick({
-        arrows:true,
+        slidesToShow: 3,
         slidesToScroll: 1,
-        slidesToShow:3,
-        autoplay: false,
-        autoplaySpeed: 2000,
+        centerMode: true,
+        centerPadding: '0px',
+        arrows: true,
+        responsive: [                    
+            {
+                breakpoint: 480,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '0px',
+                    slidesToShow: 1
+                }
+            }
+        ]
       });
   });
 
