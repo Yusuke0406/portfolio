@@ -33,38 +33,42 @@ $(function() {
     $('.intro').fadeToggle(2000);
 
       $('.single').slick({
+        autoplaySpeed: 3000,
+        autoplay: true,
         slidesToShow: 3,
         slidesToScroll: 1,
         centerMode: true,
         centerPadding: '0px',
-        arrows: true,
-        responsive: [                    
-            {
-                breakpoint: 480,
-                settings: {
-                    arrows: false,
-                    centerMode: true,
-                    centerPadding: '0px',
-                    slidesToShow: 1
-                }
-            }
-        ]
+        prevArrow: '<span class="prev-arrow">&lt;</span>',
+        nextArrow: '<span class="next-arrow">&gt;</span>',
       });
 
-      $('#login-show').click(function(){
-        $('.login-modal-wrapper').fadeIn();
-      //   $('body').css({
-      //     position:'fixed',
-      //     top: -posi,
-      // });
-      // return false;
+      $('#merukari').click(function(){
+        $('.merukari-modal-wrapper').fadeIn();
+      })
+      $('.close-modal').click(function(){
+        $('.merukari-modal-wrapper').fadeOut();
       })
 
+      $('#task').click(function(){
+        $('.task-modal-wrapper').fadeIn();
+      })
       $('.close-modal').click(function(){
-        $('.login-modal-wrapper').fadeOut();
-        // $('body').attr('style', '');
-        // $(window).scrollTop(posi);
-        // return false;
+        $('.task-modal-wrapper').fadeOut();
+      })
+
+      $('#twitter').click(function(){
+        $('.twitter-modal-wrapper').fadeIn();
+      })
+      $('.close-modal').click(function(){
+        $('.twitter-modal-wrapper').fadeOut();
+      })
+
+      $('#react').click(function(){
+        $('.react-modal-wrapper').fadeIn();
+      })
+      $('.close-modal').click(function(){
+        $('.react-modal-wrapper').fadeOut();
       })
   });
 

@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
   <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-  
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
   <script type="text/javascript" src="slick/slick.min.js"></script>
   <script src="main.js"></script>
@@ -22,7 +22,6 @@
           <li><a href="#" class="dropdown__list">TOP</a></li>
           <li><a href="#about" class="dropdown__list">ABOUT</a></li>
           <li><a href="#work" class="dropdown__list">WORKS</a></li>
-          <li><a href="#" class="dropdown__list">CONTACTC</a></li>
         </ul>
       </nav>
       <div class="intro">
@@ -53,6 +52,8 @@
               enrolled in Tech Expert and successfully graduated.</br>
               I am currently job hunting towards the Engineer.
             </p>
+            <i class="fas fa-envelope fa-2x"></i>
+            <i class="fab fa-github fa-2x"></i>
           </div>
         </div>
         <div class="text_box_right">
@@ -100,30 +101,107 @@
         </div>
       </div>
     </div>
-    <div class="page3">
-      <h3 class="about" id="work">WORKS</h3>
-      <div class="work">
-        <div class="single">
-          <div class="img_wrap"><img src= merukari.jpg></div>
-          <div class="img_wrap"><img src= task.jpg  id=login-show></div>
-          <div class="img_wrap"><img src="https://i.gyazo.com/9bdd70fee0d0c21876d44b6c4ae7e414.png" alt="Image from Gyazo" width="1438"/></div>
-          <div class="img_wrap"><img src="portfolio.jpg"></div>
-        </div>
+  <div class="page3">
+    <h3 class="about" id="work">WORKS</h3>
+    <div class="work">
+      <div class="single">
+        <div class="img_wrap"><img src= merukari.jpg id=merukari></div>
+        <div class="img_wrap"><img src= task.jpg  id=task></div>
+        <div class="img_wrap"><img src="https://i.gyazo.com/9bdd70fee0d0c21876d44b6c4ae7e414.png" alt="Image from Gyazo"  id=twitter></div>
+        <div class="img_wrap"><img src="portfolio.jpg" id=react></div>
       </div>
-      <div class="login-modal-wrapper">
-        <div class="modal">
-          <div class="close-modal">
-            <i class="fa fa-2x fa-times"></i>
-          </div>
-          <div id="login-form">
-            <h2>TASK-APP</h2>
-            <form action="#">
-              <img src="task.jpg" id="modal-img">
-              <div id="submit-btn">ログイン</div>
-            </form>
-          </div>
-        </div>
     </div>
+    
+    <!-- モーダル -->
+    <div class="merukari-modal-wrapper">
+      <div class="modal">
+        <div class="close-modal">
+          <i class="fa fa-2x fa-times"></i>
+        </div>
+          <h2>メルカリのクローンサイト</h2>
+          <div class="modal-form">
+            <div class="modal-left">
+              <img src="merukari.jpg" id="modal-img">
+            </div>
+            <div class="modal-right">
+                <b>チーム開発</b></br>
+                <b>使用言語:HTML,Scss,Ruby,Rails,javascript,github</b>
+                <div class="modal-desc">
+                <p>初めての作った個人アプリです。</br>概要はカテゴリーごとにタスクを追加できてそれを編集したり削除したりとよくあるtodoアプリと同様の機能をつけました。</br>こだわった点としてはカテゴリーをホームページで追加することができページを移動する手間がかからないようにしたことです。</p>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <!-- モーダル -->
+    <div class="task-modal-wrapper">
+      <div class="modal">
+        <div class="close-modal">
+          <i class="fa fa-2x fa-times"></i>
+        </div>
+          <h2>TASK-APP</h2>
+          <div class="modal-form">
+            <div class="modal-left">
+              <img src="task.jpg" id="modal-img">
+            </div>
+            <div class="modal-right">
+                <b>個人アプリ開発1つ目</b></br>
+                <b>使用言語:HTML,Haml,Scss,Ruby,Rails,javascript</b>
+                <div class="modal-desc">
+                <p>初めての作った個人アプリです。</br>概要はカテゴリーごとにタスクを追加できてそれを編集したり削除したりとよくあるtodoアプリと同様の機能をつけました。</br>こだわった点としてはカテゴリーをホームページで追加することができページを移動する手間がかからないようにしたことです。</p>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <!-- モーダル -->
+    <div class="twitter-modal-wrapper">
+      <div class="modal">
+        <div class="close-modal">
+          <i class="fa fa-2x fa-times"></i>
+        </div>
+          <h2>TweetApp</h2>
+          <div class="modal-form">
+            <div class="modal-left">
+              <img src="https://i.gyazo.com/9bdd70fee0d0c21876d44b6c4ae7e414.png" id="modal-img">
+            </div>
+            <div class="modal-right">
+                <b>Tweetのようなアプリ</b></br>
+                <b>使用言語:HTML,Scss,Ruby,Rails,javascript,jquery</b>
+                <div class="modal-desc">
+                <p>初めての作った個人アプリです。</br>概要はカテゴリーごとにタスクを追加できてそれを編集したり削除したりとよくあるtodoアプリと同様の機能をつけました。</br>こだわった点としてはカテゴリーをホームページで追加することができページを移動する手間がかからないようにしたことです。</p>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <!-- モーダル -->
+    <div class="react-modal-wrapper">
+      <div class="modal">
+        <div class="close-modal">
+          <i class="fa fa-2x fa-times"></i>
+        </div>
+          <h2>React-app</h2>
+          <div class="modal-form">
+            <div class="modal-left">
+              <img src="portfolio.jpg" id="modal-img">
+            </div>
+            <div class="modal-right">
+                <b>React[portfolio]
+                </b></br>
+                <b>使用言語:React</b>
+                <div class="modal-desc">
+                <p>reactを使ってportfolioを作成しました。reactを使うのは初めてでコンポーネント思考に慣れることや構造を理解することに苦戦しましたがなんとか完成させることができました。</p>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <!-- モーダル終わり -->
+    
   </div>
 </body>
 </html>
