@@ -5,8 +5,6 @@ $(function() {
       $('.dropdown').fadeToggle(200)
       return false;
     });
-
-
     var mvh = $('.page1').height();
     var mvh2 = $('.page1').height() + $('.page2').height();
     $(window).scroll(function() {
