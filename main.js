@@ -15,6 +15,8 @@ $(function() {
         $('body').css('background-color', ' #437076');
         $('.page2').css('color','Window')
         $('.page3').css('color','#fff')
+        $('#awesome').css('color','#fff')
+        $('#awesome2').css('color','#fff')
         $('.skillbar').each(function(){
         $(this).find('.skillbar-bar').animate({
             width:$(this).attr('data-percent')
@@ -23,10 +25,13 @@ $(function() {
         }else if(mvh2 < top ){
           $('body').css('background-color', '#FFD700');
           $('.page3').css('color','black')
+
         } else {
           $('body').css('background-color', '#efeff0');
           $('.page2').css('color','black')
           $('.page3').css('color','#fff')
+          $('#awesome').css('color','black')
+          $('#awesome2').css('color','black')
         }
     });
 
