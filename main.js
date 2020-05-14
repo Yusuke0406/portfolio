@@ -14,16 +14,19 @@ $(function() {
       if (mvh < top && mvh2 > top) {
         $('body').css('background-color', ' #437076');
         $('.page2').css('color','Window')
+        $('.page3').css('color','#fff')
         $('.skillbar').each(function(){
         $(this).find('.skillbar-bar').animate({
             width:$(this).attr('data-percent')
           },4000);
         });
         }else if(mvh2 < top ){
-          $('body').css('background-color', '#87ceeb');
+          $('body').css('background-color', '#FFD700');
+          $('.page3').css('color','black')
         } else {
           $('body').css('background-color', '#efeff0');
           $('.page2').css('color','black')
+          $('.page3').css('color','#fff')
         }
     });
 
@@ -47,6 +50,22 @@ $(function() {
             }
         ]
       });
+
+      $('#login-show').click(function(){
+        $('.login-modal-wrapper').fadeIn();
+      //   $('body').css({
+      //     position:'fixed',
+      //     top: -posi,
+      // });
+      // return false;
+      })
+
+      $('.close-modal').click(function(){
+        $('.login-modal-wrapper').fadeOut();
+        // $('body').attr('style', '');
+        // $(window).scrollTop(posi);
+        // return false;
+      })
   });
 
 

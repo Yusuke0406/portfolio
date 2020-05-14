@@ -258,7 +258,7 @@ nav{
   box-shadow: 1px 1px 3px rgba(200, 200, 200, 0.8);
 }
 .img_wrap:hover{
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 .slick-slide {
@@ -267,4 +267,54 @@ nav{
 }
 .slick-current {
   transform: scale(1.0);
+}
+
+.login-modal-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  display: none;
+  
+}
+
+.modal {
+  position: absolute;
+  top: 20%;
+  left: 19%;
+  background-color:#fff;
+  padding: 20px 0 40px;
+  border-radius: 10px;
+  width: 900px;
+  height: auto;
+  text-align: center;
+}
+
+#modal-img{
+  width: 50%;
+  height: auto;
+  border: ;
+}
+
+.fa-times {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  color: block(128, 128, 128, 0.46);
+  cursor: pointer;
+}
+
+
+#submit-btn {
+  display: inline-block;
+  padding: 14px 140px;
+  background-color: #5dca88;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  margin: 10px auto;
+  cursor: pointer;
 }
