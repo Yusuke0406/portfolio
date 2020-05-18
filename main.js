@@ -21,7 +21,7 @@ $(function() {
           },4000);
         });
         }else if(mvh2 < top ){
-          $('body').css('background-color', '#FFD700');
+          $('body').css('background-color', '#f1c600');
           $('.page3').css('color','black')
 
         } else {
