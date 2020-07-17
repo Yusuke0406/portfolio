@@ -73,6 +73,13 @@ $(function() {
       $('.close-modal').click(function(){
         $('.react-modal-wrapper').fadeOut();
       })
+
+      $('#php').click(function(){
+        $('.php-modal-wrapper').fadeIn();
+      })
+      $('.close-modal').click(function(){
+        $('.php-modal-wrapper').fadeOut();
+      })
   });
 
 
